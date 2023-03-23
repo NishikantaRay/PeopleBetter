@@ -5,4 +5,15 @@
     .banner-main-img{
         display: none;
     }
+    .whyus{
+        font-size: 2vh;
+    }
+}
+
+/* media query for laptop */
+@media screen and (min-width: 1000px) {
+   
+    .whyus{
+        font-size: 5.5vh;
+    }
 }
