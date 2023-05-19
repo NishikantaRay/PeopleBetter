@@ -27,11 +27,10 @@
 
 <body>
     <div class="preloader">
-        <div class="lds-ripple">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="text-center">
+            <!-- allign middle of the page logo.png -->
+            <img src="logo.png" class="prel" alt="PeopleBetter Logo dark">
+
         </div>
     </div>
     <div class="navbar-area mb-4">
@@ -123,47 +122,41 @@
                 
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://gmail.us17.list-manage.com/subscribe/post?u=d164a665617f5f1ef6e6af860&amp;id=6c7ee0b816&amp;f_id=004a5ae0f0" method="post" >
                             <div class="row">
                                 <div class="col-lg-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" id="name" class="form-control" placeholder="Name" required
+                                        <input type="text" value="" name="FNAME" id="name" class="form-control" placeholder="Name" required
                                             data-error="Please enter your name">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" id="email" class="form-control" placeholder="Your Email"
+                                        <input type="email" value="" name="EMAIL" id="email" class="form-control" placeholder="Your Email"
                                             required data-error="Please enter your email">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" id="phone_number" placeholder="Phone" required
+                                        <input type="text" name="PHONE" id="phone_number" placeholder="Phone" required
                                             data-error="Please enter your number" class="form-control">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" id="Subject" placeholder="Subject" required
-                                            data-error="Please enter your subject" class="form-control">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
+                                
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <textarea name="message" type="text" class="form-control" id="message" cols="30"
+                                        <textarea name="message" type="text" value="" name="MMERGE6" class="form-control" id="message" cols="30"
                                             rows="5" placeholder="Message" required
                                             data-error="Write your message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                               
+                                <input hidden type="text" name="b_d164a665617f5f1ef6e6af860_6c7ee0b816" tabindex="-1" value="">
                                 <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn" style="border-radius:5px">
+                                    <button value="Subscribe" name="subscribe" type="submit" class="default-btn" style="border-radius:5px">
                                         Submit Now
                                     </button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
