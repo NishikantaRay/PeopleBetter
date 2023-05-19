@@ -17,3 +17,12 @@
         font-size: 5.5vh;
     }
 }
+
+.prel{
+    /* middleof the page align the logo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
