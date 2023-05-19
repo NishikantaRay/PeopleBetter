@@ -1,0 +1,486 @@
+Sure, here's a basic schema markup for an organization:
+
+html
+Copy code
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Example Organization",
+  "legalName": "Example Legal Name",
+  "url": "https://www.example.org/",
+  "logo": "https://www.example.org/logo.png",
+  "description": "Example Organization provides services in...",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Main Street",
+    "addressLocality": "Anytown",
+    "addressRegion": "CA",
+    "postalCode": "12345",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-555-555-1212",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Spanish"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/example",
+    "https://www.twitter.com/example",
+    "https://www.instagram.com/example"
+  ]
+}
+</script>
+Note that you would need to replace the example values with the actual values for your organization. Also, you can add more properties as needed, depending on the specifics of your organization.
+
+
+
+
+Nishikanta Ray
+for product
+Certainly, here's a basic schema markup for a product:
+
+html
+Copy code
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Example Product",
+  "image": [
+    "https://www.example.com/photos/1x1/photo.jpg",
+    "https://www.example.com/photos/4x3/photo.jpg",
+    "https://www.example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "This is a description of the example product.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Example Brand"
+  },
+  "sku": "12345",
+  "gtin13": "1234567890123",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "19.99",
+    "priceValidUntil": "2023-12-31",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "Example Seller"
+    }
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "4",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "John Doe"
+    },
+    "datePublished": "2023-03-26",
+    "reviewBody": "This is a review of the example product."
+  }
+}
+</script>
+Note that you would need to replace the example values with the actual values for your product. Additionally, you can add or remove properties as needed, depending on the specifics of your product.
+
+
+
+
+Nishikanta Ray
+for article
+Sure, here's a basic schema markup for an article:
+
+html
+Copy code
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.example.com/article"
+  },
+  "headline": "Example Article Headline",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.example.com/article-image.jpg",
+    "width": "800",
+    "height": "600"
+  },
+  "datePublished": "2023-03-26",
+  "dateModified": "2023-03-26",
+  "author": {
+    "@type": "Person",
+    "name": "John Doe"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Example Publisher",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.example.com/logo.png",
+      "width": "600",
+      "height": "60"
+    }
+  },
+  "description": "This is a description of the example article.",
+  "articleBody": "This is the main text of the example article."
+}
+</script>
+Note that you would need to replace the example values with the actual values for your article. Additionally, you can add or remove properties as needed, depending on the specifics of your article.
+
+
+
+
+Nishikanta Ray
+for website
+Sure, here's a basic schema markup for a website:
+
+html
+Copy code
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.example.com/",
+  "name": "Example Website",
+  "description": "This is a description of the example website.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Example Publisher",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.example.com/logo.png",
+      "width": "600",
+      "height": "60"
+    }
+  },
+  "sameAs": [
+    "https://www.facebook.com/example",
+    "https://www.twitter.com/example",
+    "https://www.instagram.com/example"
+  ]
+}
+</script>
+Note that you would need to replace the example values with the actual values for your website. Additionally, you can add or remove properties as needed, depending on the specifics of your website.
+
+
+
+
+Nishikanta Ray
+for  breadcombs
+Sure, here's a basic schema markup for breadcrumbs:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/BreadcrumbList">
+  <ol>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.example.com/category1">
+        <span itemprop="name">Category 1</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.example.com/category1/subcategory1">
+        <span itemprop="name">Subcategory 1</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.example.com/category1/subcategory1/product1">
+        <span itemprop="name">Product 1</span></a>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</div>
+Note that you would need to replace the example values with the actual values for your breadcrumbs. Additionally, you can add or remove breadcrumb items as needed, depending on the structure of your website.
+
+
+
+
+Nishikanta Ray
+where to add this code in html file
+The placement of schema markup code within an HTML file can vary depending on the specific use case. However, here are some general guidelines:
+
+For schema markup that applies to the entire page (e.g., a website or organization), it should be placed in the <head> section of the HTML file.
+
+For schema markup that applies to a specific section of the page (e.g., a product or article), it should be placed within the relevant HTML tag(s) for that section. For example, for an article schema markup, you could place the code within the <article> tag.
+
+For schema markup that applies to multiple sections of the page (e.g., breadcrumbs), it can be placed within a separate HTML tag, such as a <div> or <nav> tag, and then placed within the relevant section(s) of the page.
+
+It's important to note that schema markup code should be placed within <script type="application/ld+json"> tags, as shown in the examples I provided earlier. This ensures that the code is recognized as schema markup by search engines and other applications that consume structured data.
+
+In any case, it's a good practice to test your schema markup using Google's Structured Data Testing Tool to ensure that it is being recognized correctly.
+
+
+
+
+Nishikanta Ray
+for breadcombs where we will add
+For breadcrumbs, you would typically add the schema markup code to the HTML section where the breadcrumbs appear on your website. You can wrap the breadcrumbs code within a <nav> or <div> tag with the itemscope and itemtype attributes set to https://schema.org/BreadcrumbList.
+
+Here's an example of how you could add the breadcrumbs schema markup code to a product page:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/BreadcrumbList">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://www.example.com/home">
+          <span itemprop="name">Home</span></a>
+        <meta itemprop="position" content="1">
+      </li>
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://www.example.com/category1">
+          <span itemprop="name">Category 1</span></a>
+        <meta itemprop="position" content="2">
+      </li>
+      <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Product 1</span>
+        <meta itemprop="position" content="3">
+      </li>
+    </ol>
+  </nav>
+</div>
+In this example, the breadcrumbs appear within a navigation element with the aria-label attribute set to "breadcrumb" for accessibility. The breadcrumbs are wrapped within a <div> tag with the itemscope and itemtype attributes set to https://schema.org/BreadcrumbList, and each breadcrumb item is wrapped within a <li> tag with the itemprop, itemscope, and itemtype attributes set to itemListElement, https://schema.org/ListItem, respectively. The meta tags are used to indicate the position of each breadcrumb item in the breadcrumb list.
+
+
+
+
+Nishikanta Ray
+for a person
+Sure, here's an example schema markup for a person:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/Person">
+  <h1 itemprop="name">John Doe</h1>
+  <p><span itemprop="jobTitle">CEO</span> of <span itemprop="affiliation">Acme Inc.</span></p>
+  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <span itemprop="streetAddress">123 Main St.</span>
+    <span itemprop="addressLocality">Anytown</span>,
+    <span itemprop="addressRegion">CA</span>
+    <span itemprop="postalCode">12345</span>
+  </div>
+  <p>Email: <a href="mailto:john.doe@example.com" itemprop="email">john.doe@example.com</a></p>
+  <p>Phone: <span itemprop="telephone">+1-123-456-7890</span></p>
+  <img itemprop="image" src="https://www.example.com/john-doe.jpg" alt="John Doe">
+</div>
+In this example, the itemscope and itemtype attributes are set to https://schema.org/Person. The name property is set using the itemprop attribute on the h1 tag. The jobTitle and affiliation properties are set using the itemprop attribute on the relevant HTML elements. The person's address is set using the address property with its own itemscope and itemtype attributes set to https://schema.org/PostalAddress. The email and telephone properties are set using the itemprop attribute on relevant HTML elements. Finally, the person's image is set using the image property with the itemprop attribute set on an img tag.
+
+
+
+
+Nishikanta Ray
+for local buissness
+Sure, here's an example schema markup for a local business:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/LocalBusiness">
+  <h1 itemprop="name">Example Business</h1>
+  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <span itemprop="streetAddress">123 Main St.</span>
+    <span itemprop="addressLocality">Anytown</span>,
+    <span itemprop="addressRegion">CA</span>
+    <span itemprop="postalCode">12345</span>
+    <span itemprop="addressCountry">USA</span>
+  </div>
+  <p>Phone: <span itemprop="telephone">+1-123-456-7890</span></p>
+  <p>Email: <a href="mailto:info@example.com" itemprop="email">info@example.com</a></p>
+  <img itemprop="image" src="https://www.example.com/logo.png" alt="Example Business">
+  <div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+    <span itemprop="dayOfWeek">Monday</span> - <span itemprop="dayOfWeek">Friday</span>: 
+    <span itemprop="opens">09:00</span> - <span itemprop="closes">17:00</span>
+  </div>
+  <a href="https://www.example.com" itemprop="url">Visit our website</a>
+</div>
+In this example, the itemscope and itemtype attributes are set to https://schema.org/LocalBusiness. The name property is set using the itemprop attribute on the h1 tag. The business address is set using the address property with its own itemscope and itemtype attributes set to https://schema.org/PostalAddress. The telephone and email properties are set using the itemprop attribute on relevant HTML elements. The business logo is set using the image property with the itemprop attribute set on an img tag. The openingHoursSpecification property is used to set the business opening hours. Finally, the business website URL is set using the url property with the itemprop attribute set on an a tag.
+
+
+
+
+Nishikanta Ray
+for event
+Sure, here's an example schema markup for an event:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/Event">
+  <h1 itemprop="name">Example Event</h1>
+  <div itemprop="location" itemscope itemtype="https://schema.org/Place">
+    <span itemprop="name">Example Venue</span>,
+    <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="streetAddress">123 Main St.</span>
+      <span itemprop="addressLocality">Anytown</span>,
+      <span itemprop="addressRegion">CA</span>
+      <span itemprop="postalCode">12345</span>
+      <span itemprop="addressCountry">USA</span>
+    </div>
+  </div>
+  <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+    <span itemprop="price">100.00</span>
+    <span itemprop="priceCurrency">USD</span>
+    <span itemprop="availability" content="InStock">In stock</span>
+    <a href="https://www.example.com/tickets" itemprop="url">Buy tickets</a>
+  </div>
+  <div itemprop="startDate" content="2023-05-20T19:00:00-07:00">
+    May 20th, 2023 at 7:00 pm
+  </div>
+  <div itemprop="endDate" content="2023-05-20T22:00:00-07:00">
+    May 20th, 2023 at 10:00 pm
+  </div>
+  <img itemprop="image" src="https://www.example.com/event-image.jpg" alt="Example Event">
+  <p itemprop="description">Join us for an evening of fun and entertainment!</p>
+</div>
+In this example, the itemscope and itemtype attributes are set to https://schema.org/Event. The name property is set using the itemprop attribute on the h1 tag. The event location is set using the location property with its own itemscope and itemtype attributes set to https://schema.org/Place. The event ticket information is set using the offers property with its own itemscope and itemtype attributes set to https://schema.org/Offer. The event start and end dates are set using the startDate and endDate properties with the content attribute set to the ISO 8601 date format. The event image is set using the image property with the itemprop attribute set on an img tag. Finally, the event description is set using the description property with the itemprop attribute set on a p tag.
+
+
+
+
+Nishikanta Ray
+for job posting
+Sure, here's an example schema markup for a job posting:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/JobPosting">
+  <h1 itemprop="title">Job Title</h1>
+  <div itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+    <span itemprop="name">Example Company</span>
+    <img itemprop="logo" src="https://www.example.com/logo.png" alt="Example Company Logo">
+  </div>
+  <div itemprop="jobLocation" itemscope itemtype="https://schema.org/Place">
+    <span itemprop="name">Example Location</span>
+  </div>
+  <div itemprop="datePosted" content="2023-03-26">March 26th, 2023</div>
+  <div itemprop="validThrough" content="2023-04-30">April 30th, 2023</div>
+  <div itemprop="employmentType">Full-time</div>
+  <div itemprop="baseSalary" itemscope itemtype="https://schema.org/MonetaryAmount">
+    <span itemprop="currency">USD</span>
+    <span itemprop="value" content="50000.00">50,000</span>
+    <span itemprop="unitText">YEAR</span>
+  </div>
+  <div itemprop="description">
+    We are looking for a qualified candidate to join our team as a Job Title. 
+    The ideal candidate will have X years of experience in Y field and be proficient in Z skills.
+  </div>
+  <div itemprop="responsibilities">
+    <ul>
+      <li>Responsibility 1</li>
+      <li>Responsibility 2</li>
+      <li>Responsibility 3</li>
+    </ul>
+  </div>
+  <div itemprop="qualifications">
+    <ul>
+      <li>Qualification 1</li>
+      <li>Qualification 2</li>
+      <li>Qualification 3</li>
+    </ul>
+  </div>
+  <div itemprop="skills">
+    <ul>
+      <li>Skill 1</li>
+      <li>Skill 2</li>
+      <li>Skill 3</li>
+    </ul>
+  </div>
+  <a itemprop="url" href="https://www.example.com/job-posting">Apply Now</a>
+</div>
+In this example, the itemscope and itemtype attributes are set to https://schema.org/JobPosting. The job title is set using the title property with the itemprop attribute set on an h1 tag. The hiring organization is set using the hiringOrganization property with its own itemscope and itemtype attributes set to https://schema.org/Organization. The job location is set using the jobLocation property with its own itemscope and itemtype attributes set to https://schema.org/Place. The job posting date is set using the datePosted property with the content attribute set to the ISO 8601 date format. The application deadline is set using the validThrough property with the content attribute set to the ISO 8601 date format. The employment type is set using the employmentType property. The base salary is set using the baseSalary property with its own itemscope and itemtype attributes set to https://schema.org/MonetaryAmount. The job description is set using the description property. The job responsibilities, qualifications, and required skills are set using the
+
+
+
+
+Nishikanta Ray
+how to hide this section
+If you want to hide the section that contains the schema markup, you can use CSS to do so. Here's an example of how you can hide it:
+
+html
+Copy code
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<div class="hidden" itemscope itemtype="https://schema.org/JobPosting">
+  <!-- your schema markup here -->
+</div>
+In this example, we've added a CSS class called hidden to the div element that contains the schema markup. We've then added some CSS that sets the display property to none for any elements with the hidden class. This will effectively hide the entire section from view.
+
+Note that while this will hide the section from the user, it won't actually remove the schema markup from the page. It's still there, and search engines and other bots will still be able to see it. If you want to remove the schema markup entirely, you'll need to edit the HTML code directly.
+
+
+
+
+Nishikanta Ray
+schema markup for organization 
+Sure, here's an example schema markup for an organization:
+
+html
+Copy code
+<div itemscope itemtype="https://schema.org/Organization">
+  <h1 itemprop="name">Example Organization</h1>
+  <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+    <img itemprop="contentUrl" src="https://www.example.com/logo.png" alt="Example Organization Logo">
+    <meta itemprop="url" content="https://www.example.com/logo.png">
+    <meta itemprop="width" content="200">
+    <meta itemprop="height" content="100">
+  </div>
+  <div itemprop="description">
+    Example Organization is a leading provider of XYZ products and services. We are committed to providing our customers with the best possible experience, and we strive to exceed their expectations at every turn.
+  </div>
+  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <span itemprop="streetAddress">123 Main St</span>
+    <span itemprop="addressLocality">Anytown</span>,
+    <span itemprop="addressRegion">CA</span>
+    <span itemprop="postalCode">12345</span>
+    <span itemprop="addressCountry">USA</span>
+  </div>
+  <div itemprop="telephone">(123) 456-7890</div>
+  <div itemprop="email">info@example.com</div>
+  <div itemprop="url">https://www.example.com</div>
+  <div itemprop="sameAs">
+    <a href="https://www.facebook.com/example"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.twitter.com/example"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/example"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/example"><i class="fa fa-youtube"></i></a>
+    <a href="https://www.instagram.com/example"><i class="fa fa-instagram"></i></a>
+  </div>
+</div>
+In this example, the itemscope and itemtype attributes are set to https://schema.org/Organization. The organization name is set using the name property with the itemprop attribute set on an h1 tag. The organization logo is set using the logo property with its own itemscope and itemtype attributes set to https://schema.org/ImageObject. The logo URL is set using the contentUrl property, and the dimensions of the logo are set using the width and height properties. The organization description is set using the description property. The organization address is set using the address property with its own itemscope and itemtype attributes set to https://schema.org/PostalAddress. The organization phone number and email address are set using the telephone and email properties, respectively. The organization website URL is set using the url property. Finally, the organization's social media profiles are set using the sameAs property with links to their respective profiles.
+
+
+
+
+Nishikanta Ray
+but it is not showing when i search in google
+It's important to keep in mind that just because you've added schema markup to your website, it doesn't guarantee that Google will display rich snippets in search results. Google uses a variety of factors to determine which sites get rich snippets, including the quality and relevance of the content, the popularity of the site, and the accuracy of the schema markup.
+
+To increase the chances of your schema markup appearing in Google search results, you can take the following steps:
+
+Make sure your schema markup is valid and free of errors. You can use Google's Structured Data Testing Tool to check your markup for errors.
+
+Ensure that your website has a clear and well-organized structure that is easy for Google to understand.
+
+Create high-quality, relevant content that provides value to your audience.
+
+Build high-quality backlinks to your website from other authoritative sites.
+
+Encourage social media sharing and engagement to increase the popularity of your site.
+
+By following these steps, you can increase the likelihood that Google will display rich snippets for your website in search results. However, it's important to remember that there is no guarantee that your schema markup will always appear in search results, as it ultimately depends on a variety of factors beyond your control.
+
+
+
