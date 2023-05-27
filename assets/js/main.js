@@ -11,7 +11,6 @@ jQuery(function ($) {
         $("#days").html(days + "<span>Days</span>"); $("#hours").html(hours + "<span>Hours</span>"); $("#minutes").html(minutes + "<span>Minutes</span>"); $("#seconds").html(seconds + "<span>Seconds</span>");
     }
     setInterval(function () { makeTimer(); }, 300); jQuery(window).on('load', function () { $('.preloader').addClass('preloader-deactivate'); })
-   
+
 }(jQuery)); function setTheme(themeName) { localStorage.setItem('inon_theme', themeName); document.documentElement.className = themeName; }
 function toggleTheme() { if (localStorage.getItem('inon_theme') === 'theme-dark') { setTheme('theme-light'); } else { setTheme('theme-dark'); } }
-(function () { if (localStorage.getItem('inon_theme') === 'theme-dark') { setTheme('theme-dark'); document.getElementById('slider').checked = false; } else { setTheme('theme-light'); document.getElementById('slider').checked = true; } })();
